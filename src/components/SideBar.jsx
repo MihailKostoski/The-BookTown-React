@@ -1,23 +1,25 @@
 import React from 'react'
 import "../Styles/sidebar.scss"
-
-function SideBar() {
+import { categories } from '../utilis/category';
+function SideBar({ setCategory}) {
 
     return (
-        <div className='sidebar'>
-        <div className="sidebar-logo">
+      
+      
+      
+      <div className='sidebar'>
+         <div className="sidebar-logo">
           Category
         </div>
-        <div  className="sidebar-menu">
-                <ul>
-                    <li>Psychology</li>
-                    <li>Poetry</li>
-                    <li>Historical fiction</li>
-                    <li>Busines</li>
-                    <li>Science</li>
-          </ul>
-           
-        </div>
+        {categories.map((category) => (
+          <button
+          onClick={() => setCategory(category.name)}
+           className="category-btn"
+            key={category.name}>
+            <span className='category-name'>{category.name }</span>
+           </button>
+        ))}
+      
     </div>
 
   )
