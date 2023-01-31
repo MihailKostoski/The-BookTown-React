@@ -1,6 +1,8 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import { useState } from 'react'
 import '../Styles/navbar.scss'
+import SearchField from './SearchField';
 
 import {GiHamburgerMenu} from 'react-icons/gi'
 function Navbar() {
@@ -8,9 +10,9 @@ function Navbar() {
    const [isNavExpanded, setIsNavExpanded] = useState(false)
   return (
     <nav className="navigation">
-    <a href="/" className="brand-name">
-     BookStore
-    </a>
+      <Link to="/" className="brand-name">BookStore</Link>
+      <SearchField/>
+  
       <button className="hamburger" onClick={() => { setIsNavExpanded(!isNavExpanded) }}>
         
     <GiHamburgerMenu/>
@@ -19,13 +21,13 @@ function Navbar() {
         className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
       <ul>
         <li>
-          <a href="/home">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="/about">About</a>
+        <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+        <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </div>

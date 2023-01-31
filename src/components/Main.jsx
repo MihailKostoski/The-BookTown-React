@@ -2,6 +2,7 @@ import React from 'react'
 import "../Styles/main.scss"
 
 import { useState, useEffect } from 'react'
+
 import { fetchApi } from '../utilis/fetchApi'
 import {MainCard} from '/';
 import { SideBar } from "/";
@@ -28,11 +29,13 @@ function Main() {
    },[category]);
    
 
-   console.log(books)
+ 
   return (
     <div className="main">
-         <SideBar category={category} setCategory={setCategory} />
-        <MainCard books={ books } />
+      <SideBar category={category} setCategory={setCategory} />
+      
+        <MainCard books={books} />
+   
     </div>
   )
 }

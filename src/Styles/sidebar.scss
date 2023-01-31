@@ -4,15 +4,17 @@ $breakpoint-tablet: 768px;
     margin:0;
     display: flex;
     align-items: center;
-    position: relative;
+position: sticky;
     flex-direction: column;
     height: 100%;
    margin-top: 1rem;
     width: 220px;
     
     
+    
     .sidebar-logo {
     width: 100%;
+    margin-bottom: 0.4rem;
      height: 2.7rem;
      background-color:  rgb(102,205,170);
      display: flex;

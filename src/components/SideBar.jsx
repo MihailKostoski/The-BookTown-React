@@ -1,6 +1,7 @@
 import React from 'react'
 import "../Styles/sidebar.scss"
 import { categories } from '../utilis/category';
+
 function SideBar({ setCategory}) {
 
     return (
@@ -8,6 +9,8 @@ function SideBar({ setCategory}) {
       
       
       <div className='sidebar'>
+
+    
          <div className="sidebar-logo">
           Category
         </div>
