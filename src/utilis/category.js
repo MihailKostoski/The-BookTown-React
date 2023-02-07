@@ -3,8 +3,13 @@ export const categories = [
     { name: 'Drama'},
     { name: 'Historical fiction' },
     { name: 'History' },
-  { name: 'Science' },
-  { name: 'Comedy' },
+    { name: 'Science' },
+  { name: 'Health' },
+  { name: 'Classic' },
+  { name: 'Music' },
+  { name: 'Medicine' },
+  { name: 'Art' },
+  { name: 'Philosophy' },
     
     
   ];

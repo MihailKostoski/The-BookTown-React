@@ -1,54 +1,57 @@
 $breakpoint-tablet: 768px;
-.sidebar{
- background-color: white;
-    margin:0;
-    display: flex;
-    align-items: center;
-position: sticky;
-    flex-direction: column;
-    height: 100%;
-   margin-top: 1rem;
-    width: 220px;
-    
-    
-    
-    .sidebar-logo {
+$breakpoint-desktop: 1366px;
+
+.sidebar {
+  background-color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  flex-direction: column;
+  height: 100%;
+  margin-top: 1rem;
+  width: 220px;
+
+  .sidebar-logo {
     width: 100%;
     margin-bottom: 0.4rem;
-     height: 2.7rem;
-     background-color:  rgb(102,205,170);
-     display: flex;
-     align-items: center;
-     justify-content: center;
-    }
+    height: 2.7rem;
+    background-color: rgb(102, 205, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .category-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    height: 2rem;
+    background-color: rgb(224, 224, 224);
+    width: 100%;
 
-    .category-btn{
-       
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       cursor: pointer;
-        margin-bottom: 2rem;
-        height: 2rem;
-        background-color:	rgb(224,224,224);
-        width: 100%;
+    &:hover {
+      background-color: rgb(102, 205, 170);
+    }
+  }
+}
+@media (max-width: $breakpoint-desktop) {
+  .sidebar {
+    display: none;
+  }
+}
 
-   
-       
-       &:hover{
-        background-color: rgb(102,205,170) ;
-       }
-    }
-    @media (max-width: $breakpoint-tablet){
-      display: none;
-         width: 180px;
-        .sidebar-logo{
-            height: 2rem;
-        }
-        .sidebar-menu li{
-            height: 1.8rem;
-        }
-      
-    }
+@media (max-width: $breakpoint-tablet) {
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar-logo {
+    height: 2rem;
+  }
+  .sidebar-menu li {
+    height: 1.8rem;
+  }
 }

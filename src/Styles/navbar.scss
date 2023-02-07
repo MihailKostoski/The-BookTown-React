@@ -16,7 +16,19 @@ $breakpoint-tablet: 768px;
         text-decoration: none;
         color: black;
         font-size: 1.3rem;
-        margin-left: 1rem;
+        position: relative;
+        left: 2rem;
+      }
+
+      .search-bar{
+        height: 1.4rem;
+        width: 14rem;
+        border: 2px solid black;
+        border-radius: 1rem;
+        position: relative;
+        padding: 0.3rem;
+        left: 8rem;
+
       }
       .navigation-menu {
         margin-left: auto;
@@ -31,7 +43,7 @@ $breakpoint-tablet: 768px;
         margin: 0 1rem;
       }
       .navigation-menu li a {
-        // increases the surface area of the anchor tag to span more than just the anchor text
+    
         text-decoration: none;
         display: block;
         width: 100%;
@@ -39,7 +51,7 @@ $breakpoint-tablet: 768px;
       
    
       .hamburger {
-        // removes default border on button element
+       
         border: 0;
         height: 40px;
         width: 40px;
@@ -48,7 +60,7 @@ $breakpoint-tablet: 768px;
         background-color: #283b8b;
         cursor: pointer;
         transition: background-color 0.2s ease-in-out;
-      // positions the icon to the right and center aligns it vertically
+      
         position: absolute;
         top: 50%;
         right: 25px;
@@ -70,13 +82,13 @@ $breakpoint-tablet: 768px;
       
         
         .navigation-menu ul {
-          // navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar)
+        
           position: absolute;
           top: 60px;
           left: 0;
-          // stacks the li tags vertically 
+        
           flex-direction: column;
-         // makes menu span full height and width
+      
          z-index: 10;
           height: calc(100vh - 60px);
           width: 100vw;
@@ -84,13 +96,13 @@ $breakpoint-tablet: 768px;
           border-top: 1px solid black;
         }
         .navigation-menu li {
-          // centers link text and strips off margin
+       
           text-align: center;
           margin: 0;
         }
         .navigation-menu li a {
           color: black;
-          // increases the surface area of the anchor tag to span the full width of the menu
+        
           width: 100%;
           padding: 1.5rem 0;
         }
