@@ -1,9 +1,0 @@
-export { default as NavBar } from "./NavBar";
-export { default as SideBar } from "./SideBar";
-export { default as BookDetails } from "./BookDetails";
-export { default as Main } from "./Main";
-export { default as MainCard } from "./MainCard";
-export { default as Search } from "./Search";
-export { default as SearchBar } from "./SearchBar";
-export { default as Loading } from "./Loading";
-export { default as BookCard } from "./BookCard";

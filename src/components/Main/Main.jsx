@@ -1,9 +1,12 @@
 import React from "react";
-import "../Styles/main.scss";
+import "./main.scss";
 
 import { useState, useEffect } from "react";
-import { fetchApi } from "../utilis/fetchApi";
-import { MainCard, Loading, SideBar } from "/";
+import { fetchApi } from "../../utilis/fetchApi";
+
+import MainCard from "./MainCard/MainCard";
+import Loading from "../Loading/Loading";
+import SideBar from "../Sidebar/SideBar";
 
 function Main() {
   ///React//
@@ -20,17 +23,17 @@ function Main() {
   // Fetch api for certain category //
   useEffect(() => {
     setLoading(true);
-    fetchApi(`week/${category}/18`).then((data) => {
+    fetchApi(`week/${category}/28`).then((data) => {
       setLoading(false);
       setBooks(data);
     });
   }, [category]);
-
   // Fetch api for certain category //
 
   return (
     <div className="main">
       <SideBar category={category} setCategory={setCategory} />
+
       {loading ? <Loading /> : <MainCard books={books} />}
     </div>
   );

@@ -1,0 +1,20 @@
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1366px;
+.main {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  height: 1000px;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-bottom: 2rem;
+  @media (min-width: 1200px) {
+    grid-template-rows: auto;
+    grid-template-columns: 13% 87%;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    grid-template-columns: 12% 88%;
+  }
+}

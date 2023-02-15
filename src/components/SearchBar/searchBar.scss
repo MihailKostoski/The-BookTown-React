@@ -1,0 +1,26 @@
+$breakpoint-tablet: 768px;
+
+.form-turnstone {
+  width: 160px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 1.4rem;
+
+  .search-btn {
+    display: none;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 320px;
+    left: 3rem;
+
+    .search-btn {
+      display: block;
+      height: 100%;
+      font-size: 0.5;
+      border-radius: 0.8rem;
+    }
+  }
+}

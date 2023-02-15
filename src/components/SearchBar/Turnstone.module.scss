@@ -1,14 +1,12 @@
 .container {
-  position: relative;
   font-size: 20px;
   font-family: sans-serif;
-  width: 400px;
-  left: 9rem;
+  width: 100%;
 
   input {
-    border: 1px solid #ddd;
-    border-radius: 1rem;
     background-color: #fff;
+    border: 1px solid black;
+    border-radius: 1rem;
     width: 100%;
     font-size: 20px;
     padding: 10px;

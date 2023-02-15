@@ -1,5 +1,6 @@
 import React from "react";
-import "../Styles/item.scss";
+
+import "./item.scss";
 function Item({ item }) {
   return (
     <div className="item-container">

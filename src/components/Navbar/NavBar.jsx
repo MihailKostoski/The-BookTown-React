@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import "../Styles/navbar.scss";
-import { SearchBar } from "./";
+import "./navbar.scss";
+import SearchBar from "../SearchBar/SearchBar";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 function Navbar() {
@@ -36,7 +36,7 @@ function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about"></Link>
           </li>
           <li>
             <Link to="/contact">Contact</Link>
